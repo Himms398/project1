@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>ADD the 2 numbers:</H1>
+    <p>Enter first number </p>
+    <input id="f" type="number" placeholder="First Number">
+    <p>Enter Second number </p>
+
+    <input id="s" type="number " placeholder="Second Number ">
+    <p>
+        <button onclick="add()">Submit
+            </button><br><br>
+        <label>The Sum is : <input id="answer"></label>
+        <br> <br> <br> <br>
+        <h1>To find the square of given number:</h1>
+        <label><p>Enter a number:</label></p>
+    <input id="sqrr" type=" number " placeholder="Enter number "> <br>
+    <p> <button onclick="sq()">Submit</button>
+    </p> <label>The square is : <input id="ans"></label></body>
+<script>
+    function add() {
+        var a, b, c;
+        a = Number(document.getElementById("f ").value);
+        b = Number(document.getElementById("s ").value);
+        c = a + b;
+        document.getElementById("answer").value = c;
+    }
+</script>
+<script>
+    function sq() {
+        var d, e;
+        d = number(document.getElementById("sqrr").value);
+        e = d ** 2;
+        document.getElementById("ans").value = e;
+    }
+</script>
+
+</html>
